@@ -306,13 +306,12 @@ document.addEventListener("DOMContentLoaded", function () {
  /**
  * Stop Youtube Video from playing on close modal 
  */
-document.querySelectorAll(".modal").forEach(function(modal) {
-  modal.addEventListener('hidden.bs.modal', function (e) {
-    var iframes = modal.querySelectorAll(".modal iframe");
-    iframes.forEach(function(iframe) {
-      iframe.src = iframe.src;
+
+document.querySelectorAll('.modal').forEach(function(modal) {
+    modal.addEventListener('hide.bs.modal', function() {
+        var memory = modal.innerHTML;
+        modal.innerHTML = memory;
     });
-  });
 });
 
 })()
