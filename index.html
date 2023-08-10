@@ -258,33 +258,13 @@
             <h2>Resume</h2> 
             </div>
             <div>
-            <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#resumeModal">
-                <i class="bi bi-download"></i> View and Download Resume  
-              </button>
-            <!-- End Button trigger modal -->
+            <!-- Download Resume -->
+              <a class="btn btn-primary fw-bold" href="assets/personal/Bransome_Tan_Yi_Hao_Resume_2023.pdf" download><i class="bi bi-download"></i> Download Resume</a>
+            <!-- End Download Resume -->
             </div>
            </div>
         </div>
-          <!-- Resume Modal -->
-          <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="resumeModalLabel">Bransome's Resume</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <object data="assets/personal/Bransome_Tan_Yi_Hao_Resume_2023.pdf" type="application/pdf" style="min-height:700px;width:100%;"></object>
-                  <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-primary btn-lg" data-bs-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        <!-- End Resume Modal -->
-
+         
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Professional Experience</h3>
@@ -375,121 +355,377 @@
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
           
           <div class="col-lg-4 col-md-6 portfolio-item filter-webApp">
-            <div class="portfolio-wrap shadow p-3 bg-white rounded">
+            <div class="shadow p-3 bg-white rounded">
               <img src="assets/img/portfolio/augment.png" class="img-fluid img-max" alt="">
               <hr>
               <h5 class="text-center my-4 fw-bold">Construction Data Tracker (Web App)</h5>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/augment.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web application catering to a large team of over 100 engineers, with notable features that include notification scheduler, metadata comparison and many more."><i class="bx bxs-detail"></i></a>
+              <!-- Button trigger modal -->
+              <div class="d-flex">
+                <a href="#" class="btn btn-primary flex-fill" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                  <i class="bx bxs-detail"></i> View Project
+                </a>
               </div>
+              <!-- End Button trigger modal -->
             </div>
           </div>
 
+          <!-- Modal 1 -->
+          <div class="modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="portfolioModal1Label">Construction Data Tracker (Web App)</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="assets/img/portfolio/augment.png" class="img-fluid mb-3" alt="">
+                  <h5 class="fw-bold">Project Description:</h5>
+                  <h5>This is a web application developed to cater to a large team of over 100 engineers, with the goal to improve the overall efficiency of metadata tracking process. Notable features that includes notification scheduler, metadata comparison and many more.</h5>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Modal 1 -->
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-webApp">
-            <div class="portfolio-wrap shadow p-3 bg-white rounded">
+            <div class="shadow p-3 bg-white rounded">
               <img src="assets/img/portfolio/stockFetcher.png" class="img-fluid img-max" alt="">
               <hr>
               <h5 class="text-center my-4 fw-bold">Stock Fetcher (Web App)</h5>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/stockFetcher.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="A simple API service (ExpressJS) to retrieve real-time stocks data and display on the web interface."><i class="bx bxs-detail"></i></a>
+              <!-- Button trigger modal -->
+              <div class="d-flex">
+                <a href="#" class="btn btn-primary flex-fill" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                  <i class="bx bxs-detail"></i> View Project
+                </a>
               </div>
+              <!-- End Button trigger modal -->
             </div>
           </div>
 
+          <!-- Modal 2 -->
+          <div class="modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="portfolioModal2Label">Stock Fetcher (Web App)</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="assets/img/portfolio/stockFetcher.png" class="img-fluid mb-3" alt="">
+                  <h5 class="fw-bold">Project Description:</h5>
+                  <h5>A simple API service (ExpressJS) to retrieve real-time stocks data and display on the web interface.</h5>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Modal 2 -->
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-webApp">
-            <div class="portfolio-wrap shadow p-3 bg-white rounded">
+            <div class="shadow p-3 bg-white rounded">
               <img src="assets/img/portfolio/bookingBot.png" class="img-fluid img-max" alt="">
               <hr>
               <h5 class="text-center my-4 fw-bold">Driving Booking Bot (Web App + Bot)</h5>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/bookingBot.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="It is a web bot built with Selenium using Python as the language and automatically selects and confirm slots automatically. It is built for those who are looking for last minute slots and are tired of having to enter their login credentials, manually selecting slots, clicking past multiple dialogues and only to be presented with ‘No more slots available’. Additionally, users will also be alerted via a Telegram bot when a slot is secure."><i class="bx bxs-detail"></i></a>
-                <a href="https://youtu.be/eBdnzIZRJcc" title="Video Demo"><i class="bx bx-link"></i></a>
+               <!-- Button trigger modal -->
+               <div class="d-flex">
+                <a href="#" class="btn btn-primary flex-fill" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                  <i class="bx bxs-detail"></i> View Project
+                </a>
               </div>
+              <!-- End Button trigger modal -->
             </div>
           </div>
 
+          <!-- Modal 3 -->
+          <div class="modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="portfolioModal3Label">Driving Booking Bot (Web App + Bot)</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="assets/img/portfolio/bookingBot.png" class="img-fluid mb-3" alt="">
+                  <h5 class="fw-bold">Project Description:</h5>
+                  <h5>This is a web bot built with Selenium using Python as the language and automatically selects and confirm slots automatically. It is built for those who are looking for last minute slots and are tired of having to enter their login credentials, manually selecting slots, clicking past multiple dialogues and only to be presented with ‘No more slots available’. Additionally, users will also be alerted via a Telegram bot when a slot is secure.</h5>
+                  <h5 class="fw-bold mt-3">Video Demo:</h5>
+                  <iframe width="100%" height="315" src="https://www.youtube.com/embed/eBdnzIZRJcc"></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Modal 3 -->
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-webApp">
-            <div class="portfolio-wrap shadow p-3 bg-white rounded">
+            <div class="shadow p-3 bg-white rounded">
               <img src="assets/img/portfolio/retailBanking.jpg" class="img-fluid img-max" alt="">
               <hr>
               <h5 class="text-center my-4 fw-bold">Retail Banking System (Enterprise App)</h5>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/retailBanking.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Retail Core Banking enterprise application (JavaEE/JakartaEE) with a relational database (MySQL) by adopting component/service-based development with JPQL and ORM."><i class="bx bxs-detail"></i></a>
+              <!-- Button trigger modal -->
+              <div class="d-flex">
+                <a href="#" class="btn btn-primary flex-fill" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                  <i class="bx bxs-detail"></i> View Project
+                </a>
               </div>
+              <!-- End Button trigger modal -->
             </div>
           </div>
 
+          <!-- Modal 4 -->
+          <div class="modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="portfolioModal4Label">Retail Banking System (Enterprise App)</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="assets/img/portfolio/retailBanking.jpg" class="img-fluid mb-3" alt="">
+                  <h5 class="fw-bold">Project Description:</h5>
+                  <h5>This is a Retail Core Banking enterprise application (JavaEE/JakartaEE) with a relational database (MySQL) by adopting component/service-based development with JPQL and ORM.</h5>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Modal 4 -->
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
-            <div class="portfolio-wrap shadow p-3 bg-white rounded">
+            <div class="shadow p-3 bg-white rounded">
               <img src="assets/img/portfolio/stubid.png" class="img-fluid img-max" alt="">
               <hr>
               <h5 class="text-center my-4 fw-bold">Stubid (Full Stack Bidding App)</h5>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/stubid.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="StuBid, also known as 'Student Bidding', is a one-stop marketplace, a mobile application for all students studying in Singapore Universities to conveniently buy or sell unwanted items online through an anonymous bidding system, maximizing the benefits gained by both the seller and buyer. This project is part of NUS School of Computing 1st year summer self-directed, independent work course, also known as Orbital (CP2106: Independent Software Development Project). The difficulty level attempted for this project by the team is Artemis (Extreme). The project is mentored and advised with an industry partner from ByteDance (TikTok) and an experienced NUS alumni."><i class="bx bxs-detail"></i></a>
-                <a href="https://www.youtube.com/watch?v=5teYrjh0gy4" title="Video Demo"><i class="bx bx-link"></i></a>
+              <!-- Button trigger modal -->
+              <div class="d-flex">
+                <a href="#" class="btn btn-primary flex-fill" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                  <i class="bx bxs-detail"></i> View Project
+                </a>
               </div>
+              <!-- End Button trigger modal -->
             </div>
           </div>
 
+          <!-- Modal 5 -->
+          <div class="modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="portfolioModal5Label">Stubid (Full Stack Bidding App)</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="assets/img/portfolio/stubid.png" class="img-fluid mb-3" alt="">
+                  <h5 class="fw-bold">Project Description:</h5>
+                  <h5>StuBid, also known as 'Student Bidding', is a one-stop marketplace, a mobile application for all students studying in Singapore Universities to conveniently buy or sell unwanted items online through an anonymous bidding system, maximizing the benefits gained by both the seller and buyer. This project is part of NUS School of Computing 1st year summer self-directed, independent work course, also known as Orbital (CP2106: Independent Software Development Project). The difficulty level attempted for this project by the team is Artemis (Extreme). The project is mentored and advised with an industry partner from ByteDance (TikTok) and an experienced NUS alumni.</h5>
+                  <h5 class="fw-bold mt-3">Video Demo:</h5>
+                  <iframe width="100%" height="315" src="https://www.youtube.com/embed/5teYrjh0gy4"></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Modal 5 -->
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
-            <div class="portfolio-wrap shadow p-3 bg-white rounded">
+            <div class="shadow p-3 bg-white rounded">
               <img src="assets/img/portfolio/iSafac.png" class="img-fluid img-max" alt="">
               <hr>
               <h5 class="text-center my-4 fw-bold">iSAFAC (Digital Attendance App)</h5>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/iSafac.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="iSAFAC is an attendance tracking android mobile app developed during COVID-19 and used as a prototype to digitalize the way attendance is taken. It helps to provide minimal contact between NSFs during this crucial period and reduce huge amount of paper wastage by going fully digital."><i class="bx bxs-detail"></i></a>
-                <a href="https://youtu.be/esEQvij3-RU" title="Video Demo"><i class="bx bx-link"></i></a>
+              <!-- Button trigger modal -->
+              <div class="d-flex">
+                <a href="#" class="btn btn-primary flex-fill" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                  <i class="bx bxs-detail"></i> View Project
+                </a>
               </div>
+              <!-- End Button trigger modal -->
             </div>
           </div>
 
+          <!-- Modal 6 -->
+          <div class="modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="portfolioModal6Label">iSAFAC (Digital Attendance App)</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="assets/img/portfolio/iSafac.png" class="img-fluid mb-3" alt="">
+                  <h5 class="fw-bold">Project Description:</h5>
+                  <h5>iSAFAC is an attendance tracking android mobile app developed during COVID-19 and used as a prototype to digitalize the way attendance is taken. It helps to provide minimal contact between NSFs during this crucial period and reduce huge amount of paper wastage by going fully digital.</h5>
+                  <h5 class="fw-bold mt-3">Video Demo:</h5>
+                  <iframe width="100%" height="315" src="https://www.youtube.com/embed/esEQvij3-RU"></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Modal 6 -->
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-iot">
-            <div class="portfolio-wrap shadow p-3 bg-white rounded">
+            <div class="shadow p-3 bg-white rounded">
               <img src="assets/img/portfolio/spFYP.png" class="img-fluid img-max" alt="">
               <hr>
               <h5 class="text-center my-4 fw-bold">SMART Live Broadcast System (IOT)</h5>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/spFYP.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Using STM/4kOpen solution (STMicroelectronics), this project aims to develop a Digital Media Box and Gateway that can be deployed Poly wide across in halls, classrooms, labs, library, etc. SP Security team can live broadcast live video message and alert users on any threats or evacuation information. Our solution will help to innovate/revolutionize the way SP staff/student’s teaching and learning experience with a 3-in-1 automated system and a Public Video Announcement System."><i class="bx bxs-detail"></i></a>
-                <a href="https://youtu.be/0u-iqavSKDE" title="Video Demo"><i class="bx bx-link"></i></a>
+               <!-- Button trigger modal -->
+               <div class="d-flex">
+                <a href="#" class="btn btn-primary flex-fill" data-bs-toggle="modal" data-bs-target="#portfolioModal7">
+                  <i class="bx bxs-detail"></i> View Project
+                </a>
               </div>
+              <!-- End Button trigger modal -->
             </div>
           </div>
 
+          <!-- Modal 7 -->
+          <div class="modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal7Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="portfolioModal7Label">SMART Live Broadcast System (IOT)</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="assets/img/portfolio/spFYP.png" class="img-fluid mb-3" alt="">
+                  <h5 class="fw-bold">Project Description:</h5>
+                  <h5>Using STM/4kOpen solution (STMicroelectronics), this project aims to develop a Digital Media Box and Gateway that can be deployed Poly wide across in halls, classrooms, labs, library, etc. SP Security team can live broadcast live video message and alert users on any threats or evacuation information. Our solution will help to innovate/revolutionize the way SP staff/student’s teaching and learning experience with a 3-in-1 automated system and a Public Video Announcement System.</h5>
+                  <h5 class="fw-bold mt-3">Video Demo:</h5>
+                  <iframe width="100%" height="315" src="https://www.youtube.com/embed/0u-iqavSKDE"></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Modal 7 -->
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-iot">
-            <div class="portfolio-wrap shadow p-3 bg-white rounded">
+            <div class="shadow p-3 bg-white rounded">
               <img src="assets/img/portfolio/mapp.jpg" class="img-fluid img-max" alt="">
               <hr>
               <h5 class="text-center my-4 fw-bold">SMART Pet House (IOT)</h5>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/mapp.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="A microcontroller application (C Language) that uses register configuration and control and interrupt service routine which allow pet owners to have an increased comfort when pets are unattended. Project was selected to represent in inter-class competition that involved about 21 projects and was awarded Merit Prize."><i class="bx bxs-detail"></i></a>
+               <!-- Button trigger modal -->
+               <div class="d-flex">
+                <a href="#" class="btn btn-primary flex-fill" data-bs-toggle="modal" data-bs-target="#portfolioModal8">
+                  <i class="bx bxs-detail"></i> View Project
+                </a>
               </div>
+              <!-- End Button trigger modal -->
             </div>
           </div>
 
+          <!-- Modal 8 -->
+          <div class="modal fade" id="portfolioModal8" tabindex="-1" aria-labelledby="portfolioModal8Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="portfolioModal8Label">SMART Pet House (IOT)</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="assets/img/portfolio/mapp.jpg" class="img-fluid mb-3" alt="">
+                  <h5 class="fw-bold">Project Description:</h5>
+                  <h5>A microcontroller application (C Language) that uses register configuration and control and interrupt service routine which allow pet owners to have an increased comfort when pets are unattended.</h5>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Modal 8 -->
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-uiux">
-            <div class="portfolio-wrap shadow p-3 bg-white rounded">
+            <div class="shadow p-3 bg-white rounded">
               <img src="assets/img/portfolio/stubidUIUX.png" class="img-fluid img-max" alt="">
               <hr>
               <h5 class="text-center my-4 fw-bold">Bidding Mobile App (UI/UX)</h5>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/stubidUIUX.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Full UI/UX prototype of a bidding mobile application."><i class="bx bxs-detail"></i></a>
-                <a href="https://www.figma.com/proto/ycRVCcj6LPQZd1haL2gPvv/StuBid?node-id=1%3A6&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A6" title="Prototype Demo"><i class="bx bx-link"></i></a>
+              <!-- Button trigger modal -->
+              <div class="d-flex">
+                <a href="#" class="btn btn-primary flex-fill" data-bs-toggle="modal" data-bs-target="#portfolioModal9">
+                  <i class="bx bxs-detail"></i> View Project
+                </a>
               </div>
+              <!-- End Button trigger modal -->
             </div>
           </div>
 
+          <!-- Modal 9 -->
+          <div class="modal fade" id="portfolioModal9" tabindex="-1" aria-labelledby="portfolioModal9Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="portfolioModal9Label">Bidding Mobile App (UI/UX)</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="assets/img/portfolio/stubidUIUX.png" class="img-fluid mb-3" alt="">
+                  <h5 class="fw-bold">Project Description:</h5>
+                  <h5>This is a Full UI/UX prototype of a bidding mobile application completed in a span of less than 1 week.</h5>
+                  <h5 class="fw-bold mt-3">Prototype Demo:</h5>
+                  <a class="fw-bold" href="https://www.figma.com/proto/ycRVCcj6LPQZd1haL2gPvv/StuBid?node-id=1%3A6&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A6" title="Prototype Demo"><i class="bx bx-link"></i> Click here to view the prototype</a>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Modal 9 -->
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-uiux">
-            <div class="portfolio-wrap shadow p-3 bg-white rounded">
+            <div class="shadow p-3 bg-white rounded">
               <img src="assets/img/portfolio/schoolBuddiesUIUX.png" class="img-fluid img-max" alt="">
               <hr>
               <h5 class="text-center my-4 fw-bold">School Social App (UI/UX)</h5>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/schoolBuddiesUIUX.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Full UI/UX prototype of a school social web and mobile application."><i class="bx bxs-detail"></i></a>
-                <a href="https://app.moqups.com/X1ohLVdORk4tsiNY4hc3TUqfKZy3YcSG/view" title="Prototype Demo"><i class="bx bx-link"></i></a>
+              <!-- Button trigger modal -->
+              <div class="d-flex">
+                <a href="#" class="btn btn-primary flex-fill" data-bs-toggle="modal" data-bs-target="#portfolioModal10">
+                  <i class="bx bxs-detail"></i> View Project
+                </a>
+              </div>
+              <!-- End Button trigger modal -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 10 -->
+        <div class="modal fade" id="portfolioModal10" tabindex="-1" aria-labelledby="portfolioModal10Label" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="portfolioModal10Label">School Social App (UI/UX)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="assets/img/portfolio/schoolBuddiesUIUX.png" class="img-fluid mb-3" alt="">
+                <h5 class="fw-bold">Project Description:</h5>
+                <h5>This is a Full UI/UX prototype of a school social application (Web and Mobile) completed in a span of less than 1 week.</h5>
+                <h5 class="fw-bold mt-3">Prototype Demo:</h5>
+                <a class="fw-bold" href="https://app.moqups.com/X1ohLVdORk4tsiNY4hc3TUqfKZy3YcSG/view" title="Prototype Demo"><i class="bx bx-link"></i> Click here to view the prototype</a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
         </div>
+        <!-- End Modal 10 -->
 
       </div>
     </section><!-- End Portfolio Section -->

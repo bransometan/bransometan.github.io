@@ -271,6 +271,10 @@
     });
 });
 
+
+  /**
+ * Contact Form Validation 
+ */
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector(".php-email-form");
   const sendButton = form.querySelector("button[type='submit']");
@@ -295,12 +299,19 @@ document.addEventListener("DOMContentLoaded", function () {
       spinnerContainer.innerHTML = `
         <div class="text-center"><button type="submit" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...</button></div>
       `; // Display the spinner animation
-        
-      // Simulate a delay to mimic a server request
-
-       
-        // Display a success message or perform further actions
     }
+  });
+});
+
+ /**
+ * Stop Youtube Video from playing on close modal 
+ */
+document.querySelectorAll(".modal").forEach(function(modal) {
+  modal.addEventListener('hidden.bs.modal', function (e) {
+    var iframes = modal.querySelectorAll(".modal iframe");
+    iframes.forEach(function(iframe) {
+      iframe.src = iframe.src;
+    });
   });
 });
 
